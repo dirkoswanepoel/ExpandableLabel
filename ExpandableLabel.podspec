@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ExpandableLabel"
-  s.version      = "0.5.2"
+  s.version      = "0.5.3"
   s.summary      = "A simple UILabel subclass that shows a tappable link if the content doesn't fit the specified number of lines"
 
   s.description  = <<-DESC
@@ -19,11 +19,11 @@ Pod::Spec.new do |s|
   
   s.platform     = :ios, "8.0"
 
+  s.swift_versions = ['5.0', '5.1']
+
   s.source       = { :git => "https://github.com/apploft/ExpandableLabel.git", :tag => s.version.to_s }
 
   s.source_files  = "Classes", "Classes/**/*.{swift}"
   s.exclude_files = "Classes/Exclude"
-  
-  s.requires_arc = true
 
 end
